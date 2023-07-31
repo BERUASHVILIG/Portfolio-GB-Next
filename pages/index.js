@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 // next image
 import Image from "next/image";
 
@@ -36,8 +37,7 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been
+            Hi Stranger i'am Entry level Programmer
           </motion.p>
           <div className="flex justify-center xl:hidden relative">
             <ProjectsBtn />

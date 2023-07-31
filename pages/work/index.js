@@ -28,8 +28,7 @@ const Work = () => {
               exit="hidden"
               className="mb-4 max-w-[400] mx-auto lg:mx-0"
             >
-              Lorem ipsum to focus attention on graphic elements in a webpage
-              design proposal Lorem.
+              Projects Developed by me.
             </motion.p>
           </div>
           <motion.div

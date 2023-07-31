@@ -1,145 +1,4 @@
 /* eslint-disable react/jsx-key */
-// import React, { useState } from "react";
-// /* eslint-disable react/jsx-key */
-// import {
-//   FaHtml5,
-//   FaCss3,
-//   FaJs,
-//   FaReact,
-//   FaWordpress,
-//   FaFigma,
-// } from "react-icons/fa";
-
-// import {
-//   SiNextdotjs,
-//   SiFramer,
-//   SiAdobexd,
-//   SiAdobephotoshop,
-// } from "react-icons/si";
-// //  data
-// export const aboutData = [
-//   {
-//     title: "skills",
-//     info: [
-//       {
-//         title: "Web Development",
-//         icons: [
-//           <FaHtml5 />,
-//           <FaCss3 />,
-//           <FaJs />,
-//           <FaReact />,
-//           <SiNextdotjs />,
-//           <SiFramer />,
-//           <FaWordpress />,
-//         ],
-//       },
-//       {
-//         title: "UI/UX Design",
-//         icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
-//       },
-//     ],
-//   },
-//   {
-//     title: "awards",
-//     info: [
-//       {
-//         title: "Webby Awards - Honoree",
-//         stage: "2011 - 2012",
-//       },
-//       {
-//         title: "Adobe Design Achievement Awards - Finalist",
-//         stage: "2009 - 2010",
-//       },
-//     ],
-//   },
-//   {
-//     title: "experience",
-//     info: [
-//       {
-//         title: "UX/UI Designer - XYZ Company",
-//         stage: "2012 - 2023",
-//       },
-//       {
-//         title: "Web Developer - ABC Agency",
-//         stage: "2010 - 2012",
-//       },
-//       {
-//         title: "Intern - DEF Corporation",
-//         stage: "2008 - 2010",
-//       },
-//     ],
-//   },
-//   {
-//     title: "credentials",
-//     info: [
-//       {
-//         title: "Web Development - ABC University, LA, CA",
-//         stage: "2011",
-//       },
-//       {
-//         title: "Computer Science Diploma - AV Technical Institute",
-//         stage: "2009",
-//       },
-//       {
-//         title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-//         stage: "2006",
-//       },
-//     ],
-//   },
-// ];
-
-// // components
-
-// import Avatar from "../../components/Avatar";
-// import Circles from "../../components/Circles";
-
-// // framer
-
-// import { motion } from "framer-motion";
-// import { fadeIn } from "../../variants";
-
-// const About = () => {
-//   const [index, setIndex] = useState();
-//   console.log(index);
-//   return (
-//     <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
-//       <Circles />
-//       <motion.div
-//         variants={fadeIn("right", 0.2)}
-//         initial="hidden"
-//         animate="show"
-//         exit="hidden"
-//         className="hidden xl:flex absolute bottom-0 -left-[370px]"
-//       >
-//         <Avatar />
-//       </motion.div>
-//       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
-//         <div>text</div>
-//         <div>
-//           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
-//             {aboutData.map((item, itemIndex) => {
-//               return (
-//                 <div
-//                   key={itemIndex}
-//                   className={`${
-//                     index === itemIndex &&
-//                     "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300"
-//                   } cursor-pointer capitalize  xl:text-lg relative w-full after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1  after:left-0 `}
-//                   onClick={() => setIndex(itemIndex)}
-//                 >
-//                   {item.title}
-//                 </div>
-//               );
-//             })}
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default About;
-
 import { useState } from "react";
 
 import { motion } from "framer-motion";
@@ -147,20 +6,8 @@ import { fadeIn } from "../../variants";
 
 import CountUp from "react-countup/";
 
-import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaReact,
-  FaWordpress,
-  FaFigma,
-} from "react-icons/fa";
-import {
-  SiAdobexd,
-  SiAdobephotoshop,
-  SiFramer,
-  SiNextdotjs,
-} from "react-icons/si";
+import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma } from "react-icons/fa";
+import { SiFramer, SiNextdotjs, SiTypescript } from "react-icons/si";
 //  data
 export const aboutData = [
   {
@@ -173,27 +20,14 @@ export const aboutData = [
           <FaCss3 />,
           <FaJs />,
           <FaReact />,
+          <SiTypescript />,
           <SiNextdotjs />,
           <SiFramer />,
-          <FaWordpress />,
         ],
       },
       {
         title: "UI/UX Design",
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
-      },
-    ],
-  },
-  {
-    title: "awards",
-    info: [
-      {
-        title: "Webby Awards - Honoree",
-        stage: "2011 - 2012",
-      },
-      {
-        title: "Adobe Design Achievement Awards - Finalist",
-        stage: "2009 - 2010",
+        icons: [<FaFigma />],
       },
     ],
   },
@@ -201,16 +35,8 @@ export const aboutData = [
     title: "experience",
     info: [
       {
-        title: "UX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
-      },
-      {
-        title: "Web Developer - ABC Agency",
-        stage: "2010 - 2012",
-      },
-      {
-        title: "Intern - DEF Corporation",
-        stage: "2008 - 2010",
+        title: "Sales Operator",
+        stage: "2021 - 2022",
       },
     ],
   },
@@ -218,16 +44,16 @@ export const aboutData = [
     title: "credentials",
     info: [
       {
-        title: "Web Development - ABC University, LA, CA",
-        stage: "2011",
+        title: "Political Science - Ilia State University",
+        stage: "2020",
       },
       {
-        title: "Computer Science Diploma - AV Technical Institute",
-        stage: "2009",
+        title: "Intro To Software Development - Digital Institute",
+        stage: "2022",
       },
       {
-        title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-        stage: "2006",
+        title: "Front-End Web Development React Course - Digital Institute",
+        stage: "2023",
       },
     ],
   },
@@ -259,8 +85,7 @@ const About = () => {
             exit="hidden"
             className="h2"
           >
-            Captivating <span className="text-accent">stories </span>
-            birth magnificent designs.
+            <span className="text-accent">About </span>
           </motion.h2>
           <motion.p
             variants={fadeIn("right", 0.4)}
@@ -269,9 +94,14 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            10 years ago, I began freelancing as a developer. Since then, I`ve
-            done remote work for agencies, consulted for startups, and
-            collaborated on digital products for business and consumer use.
+            1 years ago, I began learning web development. Since then, I`ve done
+            several Projects, Successfully finised 6-month long program of
+            Front-end Web Development React course at Digital Institute. An
+            academy which boasts with its internationally qualified lecturers
+            from leading tech companies such as Google , Microsoft , Tesla , Y
+            Combinator member fintech start up , Algolia and more. The 6-month
+            program includes 4 month module of learning React Framework and 2
+            month module of developing a software project.
           </motion.p>
           <motion.div
             variants={fadeIn("right", 0.6)}
@@ -283,34 +113,19 @@ const About = () => {
             <div className="flex flex-1 xl:gap-x-6">
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={10} duration={10} /> +
+                  <CountUp start={0} end={1} duration={10} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Years of experience
                 </div>
               </div>
+
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={250} duration={5} /> +
-                </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Satisfied clients
-                </div>
-              </div>
-              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={650} duration={10} /> +
+                  <CountUp start={0} end={15} duration={10} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Finished projects
-                </div>
-              </div>
-              <div className="relative flex-1 ">
-                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={8} duration={10} /> +
-                </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Winning awards
                 </div>
               </div>
             </div>

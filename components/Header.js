@@ -12,14 +12,13 @@ const Header = () => {
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row justify-between items-center gap-y-6 py-8">
           {/* logo */}
-          <Link href={"/"}>
-            <Image
-              src={"./logo.svg"}
-              width={220}
-              height={48}
-              alt=""
-              priority={true}
-            />
+          <Link href={"/"} className="h2 xl:mt-12">
+            <div className="text-2xl">
+              <span className="text-white font-bold text-2xl">
+                Giorgi Beruashvili
+              </span>
+              <span className="text-accent">.</span>
+            </div>
           </Link>
           {/* socials */}
           <Socials />
