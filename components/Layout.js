@@ -6,6 +6,8 @@ import { Sora } from "@next/font/google";
 
 import Nav from "../components/Nav";
 import Header from "../components/Header";
+import Head from "next/head"; // Import the Head component
+
 import TopLeftImg from "../components/TopLeftImg";
 
 const sora = Sora({
@@ -19,6 +21,10 @@ const Layout = ({ children }) => {
     <div
       className={`page bg-site text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative`}
     >
+      <Head>
+        <link rel="icon" href="/favicon.png" />
+        <title>Giorgi Beruashvili</title>
+      </Head>
       <TopLeftImg />
       <Nav />
       <Header />
