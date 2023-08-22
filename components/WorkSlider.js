@@ -29,18 +29,20 @@ const workSlides = {
           liveUrl: "https://book-app-redux-ejhhc6x7i-beruashvilig.vercel.app/",
         },
         {
-          title: "AI-Summarizer",
-          path: "./summarize-img.png",
-          githubUrl: "https://github.com/BERUASHVILIG/AI-Summarizer",
-          liveUrl: "https://ai-summarizer-lovat-eight.vercel.app/",
+          title: "IMDB",
+          path: "./imdb-react.png",
+          githubUrl: "https://github.com/BERUASHVILIG/imdb-react",
+          liveUrl: "https://imdb-react-tan.vercel.app/",
         },
       ],
     },
     {
       images: [
         {
-          title: "title",
-          path: "./thumb4.jpg",
+          title: "AI-Summarizer",
+          path: "./summarize-img.png",
+          githubUrl: "https://github.com/BERUASHVILIG/AI-Summarizer",
+          liveUrl: "https://ai-summarizer-lovat-eight.vercel.app/",
         },
       ],
     },
