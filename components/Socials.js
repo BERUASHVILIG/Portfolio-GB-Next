@@ -21,7 +21,7 @@ const Socials = () => {
       </Link>
       <Link
         href={
-          "https://drive.google.com/drive/folders/1D4B6xB4eS1K-wmKLGYcE3QbjkPuWo2A7"
+          "https://drive.google.com/drive/u/0/folders/1D4B6xB4eS1K-wmKLGYcE3QbjkPuWo2A7"
         }
         target="_blank"
         className="hover:text-accent transition-all duration-300"
